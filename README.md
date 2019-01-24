@@ -5,3 +5,5 @@ The XML file is an set of rules for sentence segmentation of Polish in [SRX](htt
 
 [M. Miłkowski and J. Lipski, “Using SRX Standard for Sentence Segmentation,” in LTC 2009, Lecture Notes in Artificial Intelligence 6562, Z. Vetulani, Ed. Berlin Heidelberg: Springer-Verlag, 2011, pp. 172–182.](http://www.springerlink.com/content/g6r2113q4q7r4841/)
 
+* More information about SRX format: http://morfologik.blogspot.com/2009/11/talking-about-srx-in-lt-during-ltc.html
+* Some notes on sentence splitting performance (in Polish): http://morfologik.blogspot.com/2010/03/testy-segmentacji.html
