@@ -1,0 +1,1094 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<srx xmlns="http://www.lisa.org/srx20" xmlns:okpsrx="http://okapi.sf.net/srx-extensions" version="2.0">
+<header segmentsubflows="yes" cascade="yes">
+<formathandle type="start" include="no"></formathandle>
+<formathandle type="end" include="yes"></formathandle>
+<formathandle type="isolated" include="no"></formathandle>
+<okpsrx:options oneSegmentIncludesAll="no" trimLeadingWhitespaces="no" trimTrailingWhitespaces="no" useJavaRegex="yes"></okpsrx:options>
+<okpsrx:sample language="pl" useMappedRules="no">To jest test. Jak to działa? Sam chciałbym wiedzieć! Cóż, to idiota… Mówił mi, że np. każdy kretyn tak potrafi powiedzieć, co potwierdza tekst na s. 143. </okpsrx:sample>
+<okpsrx:rangeRule></okpsrx:rangeRule>
+</header>
+<body>
+<languagerules>
+<languagerule languagerulename="Polish">
+<!--includes v"ad." misused as abbreviation-->
+<rule break="no">
+<beforebreak>\b[Aa]dw?\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bafr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bakad\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Aa]l\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bam\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bamer\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\barch\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Aa]rt\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bartyst\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bastr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\baustr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bbałt\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bbdb\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bbł\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bbm\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bbr\.\p{Pe}?\s</beforebreak>
+<afterbreak>[^\p{Lu}]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bbry[gt]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcentr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bces\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bchem\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bchiń\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bchir\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bc\.k\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bc\.o\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcyg\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcyw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcyt\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bczes\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bczw?\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Cc]d\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bczyt\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bćw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bćwicz\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdaw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdcn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdekl\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdemokr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdet\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdiec\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdł\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--5 dol., dop. red., dot.-->
+<rule break="no">
+<beforebreak>\bdo[tlp]\.\s</beforebreak>
+<afterbreak>[^\p{Lu}]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdost\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdosł\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bh\.c\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bds\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdst\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bduszp\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdypl\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\begz\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bekol\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bekon\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\belektr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bem\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bew\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bfab\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bfarm\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bfot\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bfr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgat\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgastr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgeogr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgeol\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgimn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgłęb\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgm\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgodz\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgórn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgosp\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bgram\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bhist\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bhiszp\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Hh]r\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bhot\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bid\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bin\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bim\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\biron\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bjn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkard\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkat\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkatol\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bk\.k\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkk\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--kol., kl.-->
+<rule break="no">
+<beforebreak>\bko?l\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bk\.p\.a\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkpc\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bk\.p\.c\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkpt\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bk\.r\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkrak\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bk\.r\.o\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkryt\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bkult\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\blaic\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\błac\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bniem\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bwoj\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Nn][bp]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bpo[lw]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bm\.in\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--pt., ps.-->
+<rule break="no">
+<beforebreak>\b[Pp][ts]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcdn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bjw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Rr]y[cs]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\btj\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Tt]zw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\btzn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Zz]ob\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bsłow\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="yes">
+<beforebreak>[^s]\.pl\.\s</beforebreak>
+<afterbreak>\p{Lu}\p{Ll}+</afterbreak>
+</rule>
+<!--pl., pw., pn.-->
+<rule break="no">
+<beforebreak>\bp[wnl]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bang\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--ub. rok i ul. Dobra-->
+<rule break="no">
+<beforebreak>\bu[lb]\.\s?</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bal\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bk\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--ok. 30 proc. lub ok. trzydzieści procent-->
+<rule break="no">
+<beforebreak>\b[Oo]k\.\s</beforebreak>
+<afterbreak>[\p{Ll}\d]</afterbreak>
+</rule>
+<!--Include the incorrect form "tyś." (5 tyś. zł), 4,5tys.-->
+<rule break="no">
+<beforebreak>\b[\d,\.]*ty[sś]\.\p{Pe}?\s</beforebreak>
+<afterbreak>[\p{Ll}\d]+</afterbreak>
+</rule>
+<!--nr. 1 (z błędem)-->
+<rule break="no">
+<beforebreak>\b[Nn]r\.\s</beforebreak>
+<afterbreak>\d</afterbreak>
+</rule>
+<!--wł., ww.-->
+<rule break="no">
+<beforebreak>\bw[wł]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bur\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzm\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bżyd\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bżarg\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bżyw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bwy[łdm]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[bu]p\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bwyst\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="yes">
+<beforebreak>\b(?iu)mazeł\stow\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Tt]ow\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bo\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b([sS]p|st|[Ss]półdz|społ|spółgł|[Ss]to[łw])\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzew\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzewn\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzdr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzazw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzast\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzaw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzał\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzal\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzam\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzak\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzakł\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzagr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bzach\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Aa]dw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Ll]ek\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bmed\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Mm]ec\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Dd]oc\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--dyw., dyr.-->
+<rule break="no">
+<beforebreak>\b[Dd]y[wr]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Ii]nż\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b(?iu)mgr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--dh (druh), dr-->
+<rule break="no">
+<beforebreak>\b[dD][hr]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--p. Nowak-->
+<rule break="no">
+<beforebreak>\b[pP]\.\s</beforebreak>
+<afterbreak>\p{Lu}\p{Ll}+</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Rr]ed\.\)?\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b(?iu)pro[fk]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bhab\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Pp]łk\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b([Nn]a|[Pp]o)dkom\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[kK]s\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b(?iu)gen\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b(?iu)por\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Rr]eż\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Pp]rzyp\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bp\.n\.e\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdyr\.\smuz\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--msza św. lub św. Paweł; śp. Jadwiga Jagiełłowa-->
+<rule break="no">
+<beforebreak>\b[śŚ][pwW]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bw\.\s</beforebreak>
+<afterbreak>((?:X{0,2})(?:V?I{0,3}|I[VX]))(?&lt;=[XVI]+)</afterbreak>
+</rule>
+<!--I poł. XIX w.-->
+<rule break="no">
+<beforebreak>\bII?\społ\.\s</beforebreak>
+<afterbreak>[IVX]+</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\betc\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--These can appear at the end of sentence, so watch out for the next letter: it shouldn't be uppercase.-->
+<rule break="no">
+<beforebreak>\bit[dp]\.\s</beforebreak>
+<afterbreak>[„”"]?\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bproc\.\)?\s</beforebreak>
+<afterbreak>\p{Ll}|\p{Lu}\p{Lu}+</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[rwn]\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bit[dp]\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcdn\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Ss]zer\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bjw\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bn\.e\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bw\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--nt., nn.-->
+<rule break="no">
+<beforebreak>\bn[tn]\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[dm]l\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bdag\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[cd]?m\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Zz][Łł]\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[Gg][rR]\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[d]?kg\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bml[nd]\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bnpl\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bpkt\.\s</beforebreak>
+<afterbreak>[\p{Ll}\d]</afterbreak>
+</rule>
+<!--str. 12-->
+<rule break="no">
+<beforebreak>\bstr\.\s</beforebreak>
+<afterbreak>[\p{Ll}\d]</afterbreak>
+</rule>
+<!--tab. 12-->
+<rule break="no">
+<beforebreak>\b[Tt]ab\.\s</beforebreak>
+<afterbreak>[\p{Ll}\d]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\btel\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b[ptw]g\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcos\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bcosec\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bsec\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bsin\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\brkm\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bust\.\s</beforebreak>
+<afterbreak>\d</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bpar\.\s</beforebreak>
+<afterbreak>\d</afterbreak>
+</rule>
+<!--lit. a, lit. a)-->
+<rule break="no">
+<beforebreak>\blit\.\s</beforebreak>
+<afterbreak>\p{Ll}\p{Pe}?\p{P}?\s</afterbreak>
+</rule>
+<!--od pon. do-->
+<rule break="no">
+<beforebreak>\b[Pp]on\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--od sob. do pt.-->
+<rule break="no">
+<beforebreak>\b[Ss]ob\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--ba! po prostu głupi!-->
+<rule break="no">
+<beforebreak>\bba!\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--pok. 131, poz. 124-->
+<rule break="no">
+<beforebreak>\bpo[zk]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bop\.\s</beforebreak>
+<afterbreak>cit\.</afterbreak>
+</rule>
+<!--oo. Dominikanie-->
+<rule break="no">
+<beforebreak>\b[Oo][Oo]\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--Ludwik Cz. został aresztowany-->
+<rule break="no">
+<beforebreak>\b([CDSR]z|Ch)\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--Na s. 112 jest opis orgii, która odbyła się w r. 2005 wg Janusza S. (l. 45).-->
+<rule break="no">
+<beforebreak>\b[rls]\.\s</beforebreak>
+<afterbreak>[1-9]+</afterbreak>
+</rule>
+<!--1800-700 l. p.n.e.-->
+<rule break="no">
+<beforebreak>[\d-–]+\sl\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--(od 1945 r.-->
+<rule break="no">
+<beforebreak>\((?:od|do|w)\s[1-9]\d*\sr\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\d+\sr\.\s</beforebreak>
+<afterbreak>[^\p{Lu}]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bn\.e\.\s</beforebreak>
+<afterbreak>[^\p{Lu}]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bt\.\s</beforebreak>
+<afterbreak>\d+</afterbreak>
+</rule>
+<!--i s. Alicji, o s. Rafaeli-->
+<rule break="no">
+<beforebreak>\b[,uoi]\ss\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--Najśw. Sakrament-->
+<rule break="no">
+<beforebreak>\b[Nn]ajśw\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--na os. Koziniec-->
+<rule break="no">
+<beforebreak>\b[Nn]a\sos\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\barab\.\s</beforebreak>
+<afterbreak>[^\x00-\x80]+</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bT\.</beforebreak>
+<afterbreak>Love\b</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bpl\.</beforebreak>
+<afterbreak>Open[oO]ffice</afterbreak>
+</rule>
+<!--20 ha. ziemi na Mazurach-->
+<rule break="no">
+<beforebreak>\bha\.\s</beforebreak>
+<afterbreak>[\p{Ll}]</afterbreak>
+</rule>
+<!--min. 30 zł lub cena min. od 30 zł-->
+<rule break="no">
+<beforebreak>\bmin\.\s</beforebreak>
+<afterbreak>[\p{Ll}\d]</afterbreak>
+</rule>
+<!--W 1991 r. Józef Stalin nie żył.-->
+<rule break="no">
+<beforebreak>\bW\s\d{4}\sr\.\s</beforebreak>
+<afterbreak>[\p{Lu}-–—„"]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b\d+\.\s</beforebreak>
+<afterbreak>\p{Ll}|\p{Lu}{2,}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b\p{L}\.\s</beforebreak>
+<afterbreak>\p{L}\.\s</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b\p{L}\.</beforebreak>
+<afterbreak>\p{L}\.</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\.\p{L}+\.\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<!--single lowercase chars at the end of sentence except for r, w, n-->
+<rule break="no">
+<beforebreak>[\s\(\[][\p{L}&amp;&amp;[^rwn]]\.\s+</beforebreak>
+<afterbreak>\p{Ll}\p{Ll}|\p{Lu}[\p{Punct}\p{Lu}]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>['"„][\.!?…]['"”]\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>["”']\s*</beforebreak>
+<afterbreak>\s*\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>[!?]+\p{Pe} </beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>[\p{Ps}][!?]+[\p{Pe}] </beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>[\[\(]*\.\.\.[\]\)]* </beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>[\[\(]*…[\]\)]* </beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b\p{Lu}\.\s\p{Lu}\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b\p{Lu}\.\p{Lu}\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\b\p{Lu}\p{Ll}\.\s?</beforebreak>
+<afterbreak>\p{Lu}[^\p{Lu}]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\.\p{Lu}\p{Ll}\.\s?</beforebreak>
+<afterbreak>\p{Lu}[^\p{Lu}]</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\s(?&lt;!\.)[„"\p{Ps}]?[A-Z]\.\s</beforebreak>
+<afterbreak>\p{Ll}|\p{Lu}\p{Ll}\p{Ll}+</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>^[„"]?[A-ZŚĆŻŹ]\.\s</beforebreak>
+<afterbreak>\p{Ll}|\p{Lu}\p{Ll}\p{Ll}+</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\(\p{Lu}?\p{Ll}+\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--Józef S. (45 l.)-->
+<rule break="no">
+<beforebreak>\s[A-Z]\.\s</beforebreak>
+<afterbreak>\(\d</afterbreak>
+</rule>
+<rule break="no">
+<beforebreak>\bDz\.\s?U\.\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<!--heuristic: no vowels = abbreviation-->
+<rule break="no">
+<beforebreak>[\p{Ll}&amp;&amp;[^aeouiyęąó]][\p{Ll}&amp;&amp;[^aeouiyęąó]]+\.\s</beforebreak>
+<afterbreak>\p{Ll}+</afterbreak>
+</rule>
+<!--Nie jesteś Rosjaninem? - spytał przedstawiciel okręgu.-->
+<rule break="no">
+<beforebreak>[\.!?…]+['"\p{Pe}\u00BB\u2019\u201D\u203A\u0002]*\s</beforebreak>
+<afterbreak>[\p{Ps}-–—]\s?\p{Ll}</afterbreak>
+</rule>
+<!--This is a text ("with a small remark!") that continues.-->
+<rule break="no">
+<beforebreak>[\.!?…]['"\u00BB\u2019\u201D\u203A\u0002]*\p{Pe}\s</beforebreak>
+<afterbreak>\p{Ll}</afterbreak>
+</rule>
+<rule break="yes">
+<beforebreak>[\.!?…]['"\p{Pe}\u00BB\u2019\u201D\u203A\u0002¹²³]*\s</beforebreak>
+<afterbreak></afterbreak>
+</rule>
+<rule break="yes">
+<beforebreak>[\.!?…]['»"”\p{Pe}]*</beforebreak>
+<afterbreak>\p{Lu}[^\p{Lu}\.]</afterbreak>
+</rule>
+<rule break="yes">
+<beforebreak>\s\p{L}[\.!?…]\s</beforebreak>
+<afterbreak>\p{Lu}\p{Ll}</afterbreak>
+</rule>
+<rule break="yes">
+<beforebreak>: </beforebreak>
+<afterbreak>[—\-–] \p{Lu}</afterbreak>
+</rule>
+</languagerule>
+<languagerule languagerulename="GeneralImportant">
+<!--Don't split up URLs.-->
+<rule break="no">
+<beforebreak>\bwww\.</beforebreak>
+<afterbreak>\w</afterbreak>
+</rule>
+<!--Don't split up e-mail addresses.-->
+<rule break="no">
+<beforebreak>[\.!?]</beforebreak>
+<afterbreak>\S*@</afterbreak>
+</rule>
+</languagerule>
+</languagerules>
+<maprules>
+<languagemap languagepattern=".*" languagerulename="GeneralImportant"></languagemap>
+<languagemap languagepattern="(PL|pl).*" languagerulename="Polish"></languagemap>
+<languagemap languagepattern=".*" languagerulename="Default"></languagemap>
+</maprules>
+</body>
+</srx>
